@@ -1,0 +1,49 @@
+c:\zabbix\bin\win64\zabbix_get.exe -s 127.0.0.1 -k Ovt.Discover["NAS"]       
+{
+	"data":[
+	 { "{#DSNASIP}":"10.0.0.170", "{#DSNASNAME}":"NASCisco1", "{#DSNASSF}":"Download", "{#DSNASNAME2}":"NAS1", "{#DSNASFLD}":"." },
+	 { "{#DSNASIP}":"10.0.0.170", "{#DSNASNAME}":"NASCisco2", "{#DSNASSF}":"Backup2", "{#DSNASNAME2}":"NAS2", "{#DSNASFLD}":"a" },
+	 { "{#DSNASIP}":"10.0.0.170", "{#DSNASNAME}":"NASCisco3", "{#DSNASSF}":"Backup3", "{#DSNASNAME2}":"NAS3", "{#DSNASFLD}":"." },
+	 { "{#DSNASIP}":"10.0.0.224", "{#DSNASNAME}":"NAS2", "{#DSNASSF}":"Backups", "{#DSNASNAME2}":"NAS4", "{#DSNASFLD}":"copias2" }
+	]
+}
+--------------------------------------------                                        
+c:\zabbix\bin\win64\zabbix_get.exe -s 127.0.0.1 -k Ovt.Discover["PING"]      
+{
+	"data":[
+	 { "{#DSPINGIP}":"10.0.0.252", "{#DSPINGNAME}":"Router_Cisco" },
+	 { "{#DSPINGIP}":"10.0.0.253", "{#DSPINGNAME}":"Router_TV_Horadada" },
+	 { "{#DSPINGIP}":"10.0.0.254", "{#DSPINGNAME}":"Router_TPLINK" }
+	]
+}
+--------------------------------------------                                        
+c:\zabbix\bin\win64\zabbix_get.exe -s 127.0.0.1 -k Ovt.Discover["COBIAN"]      
+{
+	"data":[
+	 { "{#DSSERVICENAME}":"tarea", "{#DSCOBIANTASK}":"z:/cosas", "{#DSCOBIANDEST}":"OCTO001_OVERTEL" }
+	]
+}
+--------------------------------------------                                        
+c:\zabbix\bin\win64\zabbix_get.exe -s 127.0.0.1 -k Ovt.Discover["SNMP"]      
+{
+	"data":[
+	 { "{#DSSNMPIP}":"10.0.0.254", "{#DSSNMPNAME}":"Router_TPLINK", "{#DSSNMPUSER}":"public", "{#DSSNMPOID}":".1.2.3.4.5.6.4.32.234.3.2.3", "{#DSSNMPOIDDESC}":"Estado T.Red" },
+	 { "{#DSSNMPIP}":"10.0.0.22", "{#DSSNMPNAME}":"Impresora HP Laserjet", "{#DSSNMPUSER}":"public", "{#DSSNMPOID}":".1.2.3.4.56", "{#DSSNMPOIDDESC}":"Paginas impresas" }
+	]
+}
+--------------------------------------------                                        
+c:\zabbix\bin\win64\zabbix_get.exe -s 127.0.0.1 -k Ovt.Discover["SERVICIO"]  
+{
+	"data":[
+	 { "{#DSSERVICENAME}":"MpsSvc", "{#DSSERVICEDESCRIPTION}":"Firewall de windows", "{#DSSERVICEHOST}":"OCTO001_OVERTEL" },
+	 { "{#DSSERVICENAME}":"Spooler", "{#DSSERVICEDESCRIPTION}":"Cola de impresion", "{#DSSERVICEHOST}":"OCTO001_OVERTEL" },
+	 { "{#DSSERVICENAME}":"VSS", "{#DSSERVICEDESCRIPTION}":"Instantaneas de volumen", "{#DSSERVICEHOST}":"OCTO001_OVERTEL" }
+	]
+}
+--------------------------------------------                                        
+c:\zabbix\bin\win64\zabbix_get.exe -s 127.0.0.1 -k Ovt.Discover["NSFA"]  
+{
+	"data":[
+	 { "{#DSNSFAIP}":"10.0.0.170", "{#DSNSFANAME}":"NASCisco", "{#DSNSFASF}":"Backup2", "{#DSNSFANAME2}":"NSFA1", "{#DSNSFAEXT}":"VBK", "{#DSNSFANH}":"36", "{#DSNSFAOH}":"744", "{#DSNSFAFLD}":"a" }
+	]
+}
